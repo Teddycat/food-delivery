@@ -1,0 +1,38 @@
+$black: #000
+$white: #FFF
+
+$light: 	#f4f4f6
+$gray: 		#6c6e6e
+$default: #404040
+$dark: 		#222222
+
+$orange: #ff7700
+$red: #eb573b
+$brown: #dfb87c
+$ruby: #d91b5c
+$pink: #131249
+$green: #cbdb2a
+$pink-2: pink
+$yellow: #cbdb2a
+$link: #3366bc
+$colors: ( black: $black, white: $white, light: $light, gray: $gray, default: $default, dark: $dark, red: $red, green: $green, ruby: $ruby, orange: $orange, link: $link, brown: $brown,); 
+
+.btn
+	@each $name, $color in $colors
+		&-#{$name}
+			background: $color
+			&:hover
+				background: darken($color,5%)
+.bg
+	@each $name, $color in $colors
+		&-#{$name}
+			background: $color				
+.text
+	@each $name, $color in $colors
+		&-#{$name}
+			color: $color
+			&.dotted
+				border-bottom: 1px dotted $color
+	
+
+

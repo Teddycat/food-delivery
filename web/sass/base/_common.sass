@@ -1,0 +1,47 @@
+//базис
+$footerHeight: 327px
+$wrapperWidth: 1200px
+.hidden
+	display: none
+	top: 100%
+//@include scrollbars(8px, 10px, #cccfd5, #e3e4e8)
+
+body
+	font-family: 'BloggerSansRegular', Arial, sans-serif
+	font-weight: 400
+	line-height: normal
+	font-size: 14px
+	line-height: normal
+html,
+body
+	position: relative
+	width: 100%
+	min-width: $wrapperWidth
+	height: 100%
+.super-wrapper
+	position: relative
+	min-height: 100%
+	width: 100%
+	padding-bottom: $footerHeight
+.wrapper
+	width: $wrapperWidth
+	margin-left: auto
+	margin-right: auto
+	@extend .clearfix
+
+.link
+	text-decoration: underline!important
+	&:hover
+		text-decoration: none!important
+a.dotted
+	border-bottom: 1px dotted $pink
+	&:hover
+		border-bottom: none
+.img-responsive
+	width: 100%
+	height: auto
+	position: relative
+footer
+	width: 100%
+	margin-top: -$footerHeight
+	height: $footerHeight

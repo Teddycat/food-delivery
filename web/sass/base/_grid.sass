@@ -1,0 +1,48 @@
+.right
+	float: right
+.left
+	float: left
+//grid
+.row::after, .wrapper::after, .clearfix::after, 
+.input-range::after, .tab-actions::after
+	clear: both
+	content: ""
+	display: block
+.row 
+	margin-left: -5px
+	margin-right: -5px
+
+@for $i from 1 through 12
+	.col-#{$i}
+		width: 100% / 12 * $i
+ 
+
+[class*="col-"],
+[class*="column-"]
+	box-sizing: border-box
+	float: left
+	min-height: 1px
+	//@media only screen and (max-width: 1025px)
+	//	width: 100%!important
+	//	float: none!important
+//grid
+.wmax
+	width: 100%
+.center-block
+	margin-left: auto
+	margin-right: auto
+.img-responisve
+	max-width: 100% 		
+$i: 510
+@while $i > 0
+	.mt#{$i}
+		margin-top: 1px * $i !important
+	.mr#{$i}
+		margin-right: 1px * $i !important
+	.mb#{$i}
+		margin-bottom: 1px * $i !important
+	.ml#{$i}
+		margin-left: 1px * $i !important
+	.w#{$i}
+		width: 1px * $i !important
+	$i: $i - 5

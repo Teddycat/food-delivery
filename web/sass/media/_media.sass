@@ -1,0 +1,87 @@
+$information-phone: "only screen and (max-width : 480px)"
+$information-tablet: "only screen and (max-width : 1025px)";
+$information-tablet-portrait: "only screen and (max-width : 768px)";
+
+@media #{$information-tablet}
+	.header__menu-list__item
+		display: none
+	.categories__item--bookmark
+		display: none	
+	.categories__item:hover:after
+		display: none
+	.categories__item--col-3
+		padding-left: 0
+	.filter-item
+		height: auto
+	.filter__wrapper
+		width: 100%
+		margin-left: 0
+		display: none
+	.filter-item__title
+		font-size: 18px
+		font-weight: 700
+		margin: 30px 0 20px 20px
+	.filter-label
+		font-size: 15px
+	.checker-group
+		margin-bottom: 0
+		padding: 20px
+		border-bottom: 1px solid #ccc
+	.filter-item__wrapper--submit
+		padding: 0 22px
+	.filter-btn
+		height: 50px
+		line-height: 50px
+		font-size: 21px
+	.goods-list
+		display: block
+	.goods-row
+		display: block
+		border-bottom: none
+		margin-left: 0
+		margin-right: 0
+		width: 100%
+	.goods__col-3
+		padding: 30px 20%
+	.goods-item
+		border-bottom: 1px solid #dadada
+		border-right: none
+	.goods-item__name
+		text-align: center
+	.goods-item__category
+		text-align: center
+@media #{$information-tablet-portrait}
+	.bottomline__searchline
+		position: absolute
+		display: none
+		top: 100%
+		left: 0
+		width: 100%
+		height: 50px
+		padding: 5px 5px
+		background-color: #2a4192
+	.searchline-toggler
+		display: inline-block
+	.dropdown__text
+		display: none
+	.dropdown__icon
+		color: #fff
+	.bottomline__dropdown
+		width: calc(( 100% - 210px ) / 2)
+@media #{$information-phone}
+	.bottomline__dropdown,
+	.searchline-toggler,
+	.bottomline__user
+		width: 33%
+		float: left
+	.user__info
+		display: none
+	.dropdown-list
+		width: 320px
+	.page-banner__page-gifts
+		background-size: 100%
+	.goods__col-3
+		padding: 30px 10%
+	.sort__item
+		display: block
+		margin-bottom: 10px

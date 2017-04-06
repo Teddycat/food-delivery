@@ -1,0 +1,454 @@
+.tooltip 
+	position: absolute
+	z-index: 1070
+	display: block
+	font-size: 14px
+	line-height: 18px
+	visibility: visible
+	filter: alpha(opacity=0)
+	opacity: 0
+	white-space: normal
+
+.tooltip.in 
+	filter: alpha(opacity=90)
+	opacity: .9
+
+.tooltip.top 
+	padding: 5px 0
+	margin-top: -3px
+	.tooltip-inner
+		border-top: 3px solid #84888b
+
+.tooltip.right 
+	padding: 0 5px
+	margin-left: 3px
+	.tooltip-inner
+		border-right: 3px solid #84888b
+
+.tooltip.bottom 
+	padding: 5px 0
+	margin-top: 3px
+	.tooltip-inner
+		border-bottom: 3px solid #84888b
+
+.tooltip.left 
+	padding: 0 5px
+	margin-left: -3px
+	.tooltip-inner
+		border-left: 3px solid #84888b
+
+.tooltip-inner 
+	max-width: 500px
+	padding: 5px 10px
+	color: #fff
+	text-align: center
+	text-decoration: none
+	background-color: #84888b
+	border-radius: 5px
+
+.tooltip-arrow 
+	position: absolute
+	width: 0
+	height: 0
+	border-color: transparent
+	border-style: solid
+
+.tooltip.top .tooltip-arrow 
+	bottom: 1px
+	left: 50%
+	margin-left: -5px
+	border-width: 5px 5px 0
+	border-top-color: #84888b
+
+.tooltip.top-left .tooltip-arrow 
+	bottom: 0
+	left: 5px
+	border-width: 5px 5px 0
+	border-top-color: #84888b
+
+.tooltip.top-right .tooltip-arrow 
+	right: 5px
+	bottom: 0
+	border-width: 5px 5px 0
+	border-top-color: #84888b
+
+.tooltip.right .tooltip-arrow 
+	top: 50%
+	left: 0
+	margin-top: -5px
+	border-width: 5px 5px 5px 0
+	border-right-color: #84888b
+
+.tooltip.left .tooltip-arrow 
+	top: 50%
+	right: 0
+	margin-top: -5px
+	border-width: 5px 0 5px 5px
+	border-left-color: #84888b
+
+.tooltip.bottom .tooltip-arrow 
+	top: 0
+	left: 50%
+	margin-left: -5px
+	border-width: 0 5px 5px
+	border-bottom-color: #84888b
+
+.tooltip.bottom-left .tooltip-arrow 
+	top: 0
+	left: 5px
+	border-width: 0 5px 5px
+	border-bottom-color: #84888b
+
+.tooltip.bottom-right .tooltip-arrow 
+	top: 0
+	right: 5px
+	border-width: 0 5px 5px
+	border-bottom-color: #84888b
+
+//////////////////////////////////////////////////////////////
+////////////////////////datepicker////////////////////////////
+//////////////////////////////////////////////////////////////
+.datepicker
+	cursor: not-allowed 
+.ui-datepicker
+	background: #fff
+	z-index: 888 !important
+	padding: 2px
+	font-size: 15px
+	font-weight: 400
+	color: $default
+	.ui-datepicker-prev:before
+		content:'\f104'
+		top: 5px
+		left: 5px
+		font-family: FontAwesome
+		font-size: 14px
+		color: #fff
+	.ui-datepicker-next:before
+		content:'\f105'
+		top: 5px
+		left: 5px
+		font-family: FontAwesome
+		font-size: 14px
+		color: #fff
+	select.ui-datepicker-month
+		border: none
+		color: $gray
+		font-weight: 300
+		cursor: pointer
+	select.ui-datepicker-year
+		border: none
+		color: $gray
+		font-weight: 300
+		cursor: pointer
+	.ui-datepicker-calendar
+		font-weight: 300 
+		span 
+			font-weight: 300
+		.ui-state-default
+			color: $gray
+		.ui-state-default.ui-state-active
+			color: #fff
+
+.ui-datepicker-trigger
+	display: inline-block
+	width: 38px
+	height: 38px 
+	vertical-align: middle
+	font-size: 15px 
+	margin-left: -38px
+	border-radius: 0 3px 3px 0 
+	&:hover
+		border-radius: 0 3px 3px 0
+		cursor: pointer
+.hasDatepicker
+	padding-right: 50px
+	
+.form-input.datepicker-pink.hasDatepicker:focus,
+.form-input.datepicker-pink.hasDatepicker:hover
+	border-color: $pink-2
+.form-input.datepicker-gray.hasDatepicker:focus,
+.form-input.datepicker-gray.hasDatepicker:hover
+	border-color: $pink-2
+	
+
+.datepicker ~ .ui-datepicker-trigger
+	background: #aeb1b2 
+	color: #fff
+	transition: all 0.2s
+	&:hover
+		background: #c8cbcc
+.datepicker:focus ~ .ui-datepicker-trigger
+	background: #f1abcc
+	
+//pink	
+.ui-datepicker
+	border: 1px solid $light
+	border-color: #f3c9dd
+	box-shadow: 0 0 5px rgba(241, 171, 204, 0.75)
+	.ui-datepicker-header
+		padding: 7px 0 
+		background: $pink-2
+		color: $default
+		border: none
+		font-size: 14px
+		font-weight: 300
+		.ui-datepicker-prev,
+		.ui-datepicker-next
+			text-align: center
+			line-height: 24px
+			margin-top: 6px
+		.ui-datepicker-prev-hover,
+		.ui-datepicker-next-hover
+			background-color: darken($pink-2, 5%)
+			border: none
+			color: #fff
+			top: 2px
+			cursor: pointer
+		.ui-datepicker-prev-hover
+			left: 2px
+		.ui-datepicker-next-hover
+			right: 2px
+		.datepicker-title
+	.ui-datepicker-other-month
+		.ui-state-default
+			background-color: #fff
+			color: #dbdbdb
+	.ui-state-default
+		background-color: #fafafa
+		color: #dbdbdb
+	.ui-state-hover
+		background-color: $pink-2
+		border: $pink-2 1px solid
+	.ui-state-active
+		background-color:$pink-2 
+		border: none
+	.ui-state-highlight
+		background-color: #fff
+		border: #dc9aa1 1px solid
+	
+//////////////////////////////////////////////////////////////
+////////////////////////slider////////////////////////////////
+//////////////////////////////////////////////////////////////
+.ui-slider
+	&.ui-widget-content
+		border: none
+		background: #e3e4e8
+.ui-slider
+	&.ui-corner-all
+		border-radius: 5px
+.ui-slider
+	&.ui-slider-horizontal
+		height: 10px
+	a.ui-state-default.ui-slider-handle.ui-corner-all
+		top: 0
+		position: absolute
+		cursor: pointer
+		outline: 0px
+		border: none
+		background-color: #cccfd5  
+		width: 160px 
+		height: 10px 
+		margin-left: 0 
+	&.small
+		a.ui-state-default.ui-slider-handle.ui-corner-all
+			width: 50px
+	&.pink
+		a.ui-state-default.ui-slider-handle.ui-corner-all
+			background-color: $pink-2
+			
+	&.range
+		.ui-slider-range.ui-widget-header
+			border-radius: 5px 0 0 5px 
+			background: #a4a9ae
+		.ui-slider-range.ui-widget-header.ui-slider-range-min
+			border-radius: 5px 0 0 5px 
+			background: #a4a9ae
+		a.ui-state-default.ui-slider-handle.ui-corner-all
+			width: 1px
+			height: 12px
+			margin-bottom: -1px
+			&:after
+				content:''
+				position: absolute
+				right: 0
+				top: 0
+				margin-top: -4px
+				margin-right: -2px 
+				width: 0
+				height: 0
+				border-style: solid
+				border-width: 5px 2.5px 0 2.5px
+				border-color: #a4a9ae transparent transparent transparent
+.ui-slider-amount
+	position: absolute
+	top: -25px
+	right: 0
+	margin-right: -18px 
+	width: 38px
+	height: 20px
+	padding: 5px
+	color: #FFF
+	font-size: 11px
+	background-color: #a4a9ae
+	border-radius: 5px
+&.pink
+	.ui-slider-amount
+		background-color: $pink-2
+	.ui-slider-range.ui-widget-header.ui-slider-range-min
+		background: $pink-2
+	a.ui-state-default.ui-slider-handle.ui-corner-all
+		&:after
+			border-color: $pink-2 transparent transparent transparent
+			
+
+//////////////////////////////////////////////////////////////
+////////////////////////tabs////////////////////////////////
+//////////////////////////////////////////////////////////////
+.tabs.ui-tabs 
+	background: none
+	padding: 0
+	margin: 0
+	border: none
+	border-radius: 0
+.tabs-list 
+	display: table
+	width: 100%
+	border-bottom: none
+.tabs .ui-tabs-nav 
+	display: table-row
+	padding: 0
+	margin: 0
+	border: 0
+	border-radius: 0
+	background: none
+.tabs .ui-tabs-nav .ui-state-default 
+	display: table-cell
+	margin: 0 !important
+	padding: 0 !important
+	border-radius: 0
+	border: 0
+	float: none
+	background: none
+	background-color: #F6F8FA 
+.tabs .ui-tabs-nav .ui-state-default
+	border: none
+	padding: 0
+.tabs .ui-tabs-nav .ui-state-default .ui-tabs-anchor 
+	float: none
+	padding: 15px 0
+	margin: 0
+	display: block
+	font-weight: 400
+	text-align: center
+	text-transform: uppercase
+	color: #b9bcc6
+	transition: border-color 0.3s ease 0s
+	text-decoration: none
+	background-color: #F6F8FA
+	border-radius: 5px
+	border-top: 3px solid transparent
+	outline: 0px
+	&:hover
+		border-top: 3px solid #4e5d6c
+.ui-tabs .ui-tabs-panel
+	border: none
+	padding: 0
+	background-color: #fff
+	font-weight: 400 
+	border-bottom: 3px solid #e3e4e8
+	color: #99a3b1 
+	.tabs-body
+		padding: 20px
+.tabs-list > ul > li:hover  a 
+	background: #f9f9f9
+.tabs .ui-tabs-nav .ui-state-default.ui-tabs-active .ui-tabs-anchor  
+	background: #fff
+	color: $pink-2
+	border-bottom: none
+	border-top: 3px solid $pink-2
+.ui-widget-content
+	border: none 
+.tabs-body
+	color: $default 
+	
+//////////////////////////////////////////////////////////////
+////////////////////////accordion/////////////////////////////
+//////////////////////////////////////////////////////////////
+.accordion-header
+	padding: 10px 15px 20px
+	background-color: #F6F8FA
+	color: #99a3b1
+	font-size: 23px
+	border-radius: 5px 5px 0 0
+.ui-accordion
+	border-radius: 0 0 5px 5px
+	background-color: #fff 
+	border-bottom: 3px solid #e3e4e8
+	.ui-accordion-header.ui-state-default
+		padding: 20px 35px
+		margin: 0 20px
+		color: #99a3b1
+		font-size: 15px
+		border: none
+		border-radius: 0px
+		outline: 0px
+		background-color: #FFF
+		border-bottom: 1px solid #edf0f2
+		.ui-accordion-header-icon
+			top: 0
+			left: 0
+			margin: 20px 0 0 0
+		.ui-icon
+			background-image: none
+			text-indent: 0px
+			width: 20px
+			height: 20px
+			text-align: center
+			vertical-align: middle
+			overflow: visible
+			&:before
+				position: absolute
+				left: 0
+				top: 0
+				content:'\f0fe'
+				font-family: FontAwesome
+				font-size: 16px 
+		&.ui-state-hover,
+		&.ui-state-active
+			color: $pink-2
+		&.ui-state-active
+			border-bottom: none 
+			.ui-icon
+				&:before
+					content:'\f146'
+			&~.ui-accordion-content
+				border-bottom: 1px solid #edf0f2		
+	.ui-accordion-content
+		padding: 0 35px 20px 35px
+		margin: 0 20px
+		background-color: #FFF
+		color: #99a3b1
+		border-radius: 0px
+.ui-state-default
+//////////////////////////////////////////////////////////////
+////////////////////////treetable/////////////////////////////
+//////////////////////////////////////////////////////////////
+.treetable span.indenter a[title="Collapse"]:before
+	content:"\f147"
+	font-family: FontAwesome
+	font-size: 10px
+	color: #a4a9ae
+	margin-right: 10px
+	vertical-align: middle
+
+.treetable span.indenter a[title="Expand"]:before
+	content:"\f196"
+	font-family: FontAwesome
+	font-size: 10px
+	color: #a4a9ae
+	margin-right: 10px
+	vertical-align: middle
+
+.ui-accordion-content.ui-helper-reset.ui-widget-content.ui-corner-bottom.ui-accordion-content-active
+	height: auto!important		 

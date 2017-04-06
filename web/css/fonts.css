@@ -1,0 +1,32 @@
+/* font-family: "BloggerSansRegular"; */
+@font-face {
+    font-family: "BloggerSansRegular";
+    src: url("../fonts/BloggerSansRegular/BloggerSansRegular.otf") format("otf"),
+    url("../fonts/BloggerSansRegular/BloggerSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BloggerSansMedium"; */
+@font-face {
+    font-family: "BloggerSansMedium";
+    src: url("../fonts/BloggerSansMedium/BloggerSansMedium.otf") format("otf"),
+    url("../fonts/BloggerSansMedium/BloggerSansMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BloggerSansBold"; */
+@font-face {
+    font-family: "BloggerSansBold";
+    src: url("../fonts/BloggerSansBold/BloggerSansBold.otf") format("otf"),
+    url("../fonts/BloggerSansBold/BloggerSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BloggerSansLight"; */
+@font-face {
+    font-family: "BloggerSansLight";
+    src: url("../fonts/BloggerSansLight/BloggerSansLight.otf") format("otf"),
+    url("../fonts/BloggerSansLight/BloggerSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

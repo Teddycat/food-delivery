@@ -1,0 +1,129 @@
+#success {
+    margin-left: 110px;
+}
+img{
+    max-width: 100% !important;
+}
+h3, .h3 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.categories-img,
+.categories-img img {
+    height: 227px;
+}
+
+a:hover, a:focus {
+    text-decoration: none !important;
+}
+
+.filter {
+    margin-bottom: 30px !important;
+}
+#second {
+    display: none;
+}
+
+#secondRow {
+    display: none;
+}
+
+.product-title a {
+    font-size:50%;
+}
+.product-title:after
+{display: none;}
+
+.super-wrapper:after
+{display: none !important;}
+
+.cart-box__cart-img {
+  left: 49% !important;  
+}
+
+.main-nav__item {
+  margin-right: 20px;
+}
+
+.categories-descr {
+    color: #000000 !important; 
+   
+}
+
+.categories-img img {
+    width:100% !important;
+}
+
+.datero {
+    width:300px !important;
+}
+
+.text-black {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.main-firstscreen {
+    padding-top: 250px !important;
+}
+.content-nav__list {
+   margin-top: -40px !important; 
+}
+.btn-favourite .fa-star{ 
+    color: yellow; 
+}
+
+#form2 {
+    display:none;
+}
+#nonback {
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 1700px){
+    .carousel:after{
+        display: none;
+    }
+}
+
+.content-wrapper {
+    border-radius: 20px;
+}
+
+.modal {z-index: 9999 !important}
+
+input[type="radio"], input[type="checkbox"]{
+    opacity: 1 !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+
+.content-nav__list a:hover,
+.content-nav__list a:focus,
+.content-nav__list a:active{
+    color: #eb573b !important;
+    text-decoration: none !important;
+}
+
+.categories__btn-order:hover,
+.categories__btn-order:focus,
+.categories__btn-order:active{
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+.good-img{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.good-img img{
+    width: 100%;
+    height: 100%;
+}
+.categories-title{
+    height: 55px;
+}

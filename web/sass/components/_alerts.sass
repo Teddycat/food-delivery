@@ -1,0 +1,60 @@
+/*Notes & Alerts*/
+.note
+	padding: 21px 30px 21px 15px
+	position: relative
+	border-left: 2px solid
+.alert
+	padding: 20px 30px 20px 20px
+	position: relative
+	border: 1px solid
+.alert-close
+	position: absolute
+	padding: 0
+	top: 10px
+	right: 10px
+	color: #000 
+	opacity: 0.8 
+	background-color: transparent
+	outline: none
+	border: none
+	font-size: 12px 
+	cursor: pointer  
+	transition: opacity 0.2s ease-out 0.1s
+	&:hover
+		opacity: 1
+.alert-gray,
+.note-gray
+	background-color: #ebebeb
+	border-color: #e0e0e0
+	color: #737373
+	.alert-close 
+		color: #b5b5b5
+.alert-pink,
+.note-pink
+	background-color: #faedf3
+	border-color: #ebdfe4
+	color: $pink
+	.alert-close
+		color: #f0a3c3
+.alert-green,
+.note-green
+	background-color: #f4faee
+	border-color: #e0ebdf
+	color: $green
+	.alert-close
+		color: #a4d4a2
+.alert-orange,
+.note-orange
+	background-color: #faf5eb
+	border-color: #ebe7df
+	color: #e5a100
+	.alert-close
+		color: #f0cd95
+.note-gray
+	border-color: #b3b3b5
+.note-pink
+	border-color: $pink
+.note-green
+	border-color: $green
+.note-orange
+	border-color: #faaf00
